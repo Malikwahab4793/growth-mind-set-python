@@ -69,7 +69,8 @@ if st.checkbox(f"clean data for {file.name}"):
 
 
     st.button(f"convert {file.name}")
-    buffer = BytesIo()
+        buffer = BytesIO()
+
     if conversion_type == "CSV":
         df.to_csv(buffer, index=False)
         file_name = file.name.replace(file_exe, "csv")
