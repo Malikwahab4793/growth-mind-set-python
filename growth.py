@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-from io import BytesIo
+from io import BytesIO
 st.set_page_config(page_title= "Data Sweeper", layout='wide')
 
 #Custom CSs
